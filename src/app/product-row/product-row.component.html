@@ -1,0 +1,13 @@
+<!-- <div class="row border m-3 p-3"> -->
+    <!-- <div class="col-md-2"> -->
+        <app-product-image [product]="product"></app-product-image>
+    <!-- </div> -->
+    <div class="col-md-3">
+        <h2>{{ product?.name }}</h2>
+        <p>SKU # {{ product?.sku }}</p>
+        <app-product-department [product]="product"></app-product-department>
+    </div>
+    <div class="col-md-6">
+        <app-price-display [price]="product.price"></app-price-display>
+    </div>
+<!-- </div> -->

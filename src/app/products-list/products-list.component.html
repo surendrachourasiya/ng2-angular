@@ -1,3 +1,9 @@
-<h1>{{ productList?.name }}</h1>
-<span>{{ productList?.sku }}</span>
-<button (click)="productWasSelected(productList)">Select</button>
+<div>
+    <app-product-row
+    *ngFor="let product of productList"
+    [product]="product"
+    (click)="clicked(product)"
+    [class.selected]="isSelected(product)">
+
+    </app-product-row>
+</div>
